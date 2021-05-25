@@ -390,6 +390,12 @@ nav {
   background-color: rgba(0, 0, 0, 0.07);
 }
 
+@media screen and (max-width: 576px) {
+  html {
+    font-size: 11px;
+  }
+}
+
 @media screen and (max-width: 992px) {
   header {
     position: fixed;
