@@ -105,9 +105,6 @@ nav {
   gap: 2rem;
 }
 
-.image:last-child {
-}
-
 .image-reverse {
   flex-direction: row-reverse;
 }
