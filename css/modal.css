@@ -7,6 +7,8 @@
   z-index: 10;
   display: none;
   opacity: 0;
+  overflow-y: auto;
+  background-color: rgba(0, 0, 0, 0.5);
 }
 
 .modal-overlay {
@@ -22,12 +24,13 @@
 }
 
 .modal-content {
-  top: 50%;
+  top: 5rem;
   position: absolute;
   left: 50%;
-  transform: translateX(-50%) translateY(-50%);
+  transform: translateX(-50%); /*translateY(-50%);*/
   width: 60rem;
   background-color: white;
+  margin-bottom: 5rem;
 }
 
 .modal-header {
@@ -68,8 +71,6 @@
 @media screen and (max-width: 992px) {
   .modal-content {
     width: 36rem;
-    max-height: 100%;
-    overflow-y: scroll;
   }
 
   .modal-inner-content {
@@ -81,8 +82,8 @@
 
 @media screen and (max-width: 576px) {
   .modal-content {
-    width: auto;
-    margin: 0 1rem;
+    width: 90%;
+    margin: 0;
   }
 
   .modal-inner-content {
@@ -92,6 +93,6 @@
   }
 
   .modal-main-image {
-    width: 19rem;
+    width: 100%;
   }
 }
